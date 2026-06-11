@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",                             // Mandatory, you're making one of these!
+    "id": "Mod_ID",                                 // Mandatory, unique id for your mod. You should not use the same id as any other mod.  Cannot contain the '#' character.  Mod ids must also be valid folder pathing in order to support compatibility with other mods.
+    "name": "Arma's Vehicle Additions",                   // Mandatory.
+    "authors": [ "ArmaSwiss" ],    // Optional, but you probably want to put your name here. More than one entry can be added, as shown.
+    "description": "Some vehicle additions to add flavor and simple functionality",            // Optional
+    "category": "vehicles",                        // Optional, see below for a full list of supported values. The category is just for information purposes, so don't worry if your mod might fit more than one category.
+    "dependencies": [ "dda" ],                      // Optional. What other mods are required for this mod to function? If your mod depends on another one to work properly, adding that mod's `id` attribute to the array causes Cataclysm to force that mod to load before yours.
+    "version": "0.1",                         // Optional. For informational purposes only. No versioning system is provided, so whatever you put here is up to you. Feel free to name your versions after ice cream.
+    "core": false,                                  // Optional, default false. Core mods will be loaded before anything else. Used for DDA, third-party use will not be supported.
+    "obsolete": false,                              // Optional, default false. Obsolete mods are loaded for legacy saves but cannot be used when starting new worlds
+    "path": "Arma's Vehicle Additions/"                         // Optional, this directory relative to modinfo.json's location will be considered the mod's actual directory. e.g. if modinfo.json is located at C:\CDDA\my_mod\modinfo.json, then the mod files would be considered to be at C:\CDDA\my_mod\my_mod_files\. A file such as C:\CDDA\my_mod\some_other_file.json would be ignored, it isn't located inside the specified directory.
+  }
+]
